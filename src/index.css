@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+:root {
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 4em;
+    background-color: #0a2d40;
+}
+header .content {
+    width: 80%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header .content a h1 {
+    color: #f1f6f9;
+}
+header .content a {
+    text-decoration: none;
+}
+header .content a p {
+    color: #f1f6f9;
+}
