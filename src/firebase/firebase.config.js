@@ -14,11 +14,7 @@ initializeApp(firebaseConfig);
 
 const db = getFirestore();
 
-const collectionRef = collection(db, "todos");
-
-getDocs(collectionRef).then((item) => {
-    item.docs.map((item) => console.log(item.data()));
-});
+export const collectionRef = collection(db, "todoList");
 
 // addDoc(collectionRef, {
 //     id: Math.random(),
