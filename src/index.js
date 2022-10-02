@@ -6,4 +6,8 @@ import "./firebase/firebase.config";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+    // <React.StrictMode>
+    <App />
+    // </React.StrictMode>
+);

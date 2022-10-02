@@ -1,4 +1,4 @@
-function AddTodo() {
+function AddTodo({ addTodoHandler, changeTodoTitleHandler }) {
     return (
         <section className="mt-5">
             <div className="container">
@@ -11,10 +11,12 @@ function AddTodo() {
                                     className="form-control"
                                     required
                                     placeholder="Todo title"
+                                    onChange={changeTodoTitleHandler}
                                 />
                                 <button
                                     className="btn btn-outline-primary border-2 fw-bolder"
                                     type="submit"
+                                    onClick={addTodoHandler.bind(this)}
                                 >
                                     Add Todo
                                 </button>
